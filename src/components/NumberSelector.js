@@ -49,6 +49,12 @@ const Container = styled.div`
     span{
         color: red;
     }
+    @media(max-width: 768px){
+        align-items: center;
+        .flex{
+        gap: 10px;
+    }
+    }
 `
 
 const Box = styled.div`

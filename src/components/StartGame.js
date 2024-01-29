@@ -31,6 +31,7 @@ const Container = styled.div`
     margin: 0 auto;
     height: 100vh;
     align-items: center;
+    /* align-content: center; */
 
     .main{
         h1{
@@ -39,6 +40,27 @@ const Container = styled.div`
             white-space: nowrap;
         }
         margin-left: 50px;
+    }
+    @media(max-width: 768px){
+        flex-direction: column;
+        align-content: center;
+        img{
+            height: 400px;
+            width: 500px;
+        }
+        .main{
+            margin-left: 0px;
+            text-align: center;
+            h1{
+                font-size: 70px;
+            }
+        }
+    }
+    @media(max-width: 468px){
+        img{
+            height: 300px;
+            width: 400px;
+        }
     }
 `
 export const Button = styled.button`

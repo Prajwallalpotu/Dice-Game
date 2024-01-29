@@ -39,6 +39,3 @@ const Container = styled.div`
 
 
 export default RollDice
-
-
-                {/* <img src={`./images/dice/dice_${currentDice}.png`}/> */}

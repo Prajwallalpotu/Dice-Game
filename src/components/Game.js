@@ -85,23 +85,39 @@ const Score_Numbers = styled.div`
     height: fit-content;
     align-items: end;
     margin-top: 100px;
-`
- const But = styled.div`
-    .Buttons{
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+
+    }
+`;
+
+const But = styled.div`
+    .Buttons {
         display: flex;
         flex-direction: column;
         gap: 30px;
         align-items: center;
+
+        @media (max-width: 768px) {
+            gap: 20px; 
+        }
     }
- `
+`;
 
 const OutlineButton = styled(Button)`
     background-color: white;
     color: black;
     border: 1px solid black;
-    &:hover{
+
+    &:hover {
         background-color: black;
         color: white;
         border: 1px solid black;
     }
-`
+
+    @media (max-width: 768px) {
+    }
+`;
+
