@@ -7,12 +7,16 @@ const RollDice = (
         rollDice
     }
 ) =>{
+    const img = "./images/dice/dice_1.png"
     return(
         <Container>
             <div className="dice"
                     onClick={rollDice}
                 >
-                <img src={`/images/dice/dice_${currentDice}.png`}/>
+                <img src={require(`./images/dice/dice_${currentDice}.png`)}/>
+                
+                
+                
             </div>
             <p>Click on Dice to roll</p>
         </Container>
@@ -35,3 +39,6 @@ const Container = styled.div`
 
 
 export default RollDice
+
+
+                {/* <img src={`./images/dice/dice_${currentDice}.png`}/> */}

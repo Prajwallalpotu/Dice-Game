@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import dices from './images/dices.png';
+
 
 
 const StartGame = ( { toggle }) => {
+    // let image = "dice_roll/public/images/dices.png";
     return (
         <Container>
             <div>
             <img 
-                src="/images/dices.png"
+                src = {dices}
                 alt="Dice Image"
             />
             </div>

@@ -4,12 +4,15 @@ import styled from "styled-components";
 export const Rules = () =>{
     return(
         <Container>
-            <h2>How to Play Dice Game</h2>
+            <h2>How to Play the Dice Game:</h2>
             <div className="text"> 
-                <p>Select any number</p>
-                <p>Click on dice image</p>
-                <p>After click on dice if selected number is equal to dice number you will get <b className="green">+3</b> points.</p>
-                <p>If you get wrong guess <b className="red">-1</b> points</p>
+            <ul>
+                <li><p>Choose a number.</p></li>
+                <li><p>Click on the dice.</p></li>
+                <li><p>If your chosen number matches the rolled dice number, you earn <span className="green">+3</span> points.</p></li>
+                <li><p>If your guess is incorrect, you <span className="red">lose 1</span> point.</p></li>
+                
+            </ul>
             </div>
         </Container>
     )
